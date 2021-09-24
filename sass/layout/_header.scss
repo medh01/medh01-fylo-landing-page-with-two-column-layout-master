@@ -1,0 +1,20 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin: 0 10px;
+    img{
+        width: 100px;
+        height: 30px;
+    }
+    nav{
+        a{  
+            text-transform: $cap;
+            font-size: map-get($fs,"small");
+            color: $very-dark-blue;
+            margin-right: 10px;
+        }
+    }
+
+}

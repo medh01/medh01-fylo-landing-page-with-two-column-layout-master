@@ -1,0 +1,45 @@
+.access{
+    background-color: $desaturated-blue;
+    padding: 40px 20px;
+    .text{
+        h2{
+            text-align: center;
+            color: $light-grayish-blue;
+            font-size: map-get($fs,"medium");
+            margin-bottom: $m-element;
+        }
+        p{
+            text-align: center;
+            color: $light-grayish-blue;
+            font-size: map-get($fs,"small");
+            margin-bottom: $m-element;
+        }
+    }
+    .form{
+            display: flex;
+            flex-direction: column;
+            input{
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+            button{
+                @extend %button;
+            }
+        }
+        @include respond(tablet){
+            display: flex;
+            .text{
+                width: 40%;
+                margin-right: 5%;
+            }
+
+            .form{
+                width: 50%;
+                button{
+                    width: max-content;
+                    padding: 20px;
+                }
+            }
+            
+        }
+}

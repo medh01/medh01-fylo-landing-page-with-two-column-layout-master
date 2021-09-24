@@ -1,0 +1,26 @@
+//media query
+@mixin respond($b-p){
+    @if $b-p==mobile {
+        @media screen and (max-width: $x-s){
+            @content;
+        }
+    }
+
+    @if $b-p==tablet {
+        @media screen and (min-width: $md){
+            @content;
+        }
+    }
+
+    @if $b-p==laptop {
+        @media screen and (min-width: $md) and(max-width: $l){
+            @content;
+        }
+    }
+
+    @if $b-p==large-laptop {
+        @media screen and (min-width: $l){
+            @content;
+        }
+    }
+}

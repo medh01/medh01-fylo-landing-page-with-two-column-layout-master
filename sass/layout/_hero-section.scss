@@ -1,0 +1,52 @@
+.hero{
+    margin: 100px 20px;  
+    .image{
+        img{
+            width: 100%;
+        }
+        margin-bottom: $m-element;
+    }
+    .text{
+        h1{
+            font-size: map-get($fs,"large");
+            margin-bottom: $m-element;        
+            text-align: center;
+            color: $very-dark-blue;
+        }
+        p{
+            font-size: map-get($fs,"small");
+            color: $very-dark-blue;
+            text-align: center;
+            margin-bottom: $m-element;
+        }
+        .email{
+            display: flex;
+            flex-direction: column;
+            input{
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+            button{
+                @extend %button;
+            }
+            @include respond(large-laptop){
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                input{
+                    width: 60%;
+                }
+                button{
+                    width: 39%;
+                    height: 40px;
+                }
+            }
+        }
+    }
+    @include respond(tablet){
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+}

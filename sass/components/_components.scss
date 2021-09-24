@@ -1,0 +1,14 @@
+// button 
+
+%button{
+    padding: 10px 0;
+    text-transform: $cap;
+    background-color: $bright-blue;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    transition: $transition;
+    &:hover{
+        opacity: 0.5;
+    }
+}

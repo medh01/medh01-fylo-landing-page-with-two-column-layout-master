@@ -1,0 +1,38 @@
+// colors
+$very-dark-blue: hsl(243, 87%, 12%);
+$desaturated-blue: hsl(238, 22%, 44%);
+$bright-blue: hsl(224, 93%, 58%);
+$moderate-cyan: hsl(170, 45%, 43%);
+$light-grayish-blue: hsl(240, 75%, 98%);
+$light-gray: hsl(0, 0%, 75%);
+
+//font size
+$fs : (
+    "small": 0.9rem,
+    "medium": 1.1rem,
+    "large": 1.6rem,
+);
+
+
+
+//font weight
+$f-400: 400;
+$f-700: 700;
+
+//text-tranform
+$cap: capitalize;
+$up: uppercase;
+
+
+//margin
+
+$m-element: 30px;
+
+//animation
+
+$transition: 500ms ease-in;
+
+// breakpoints
+$x-s: 576px;
+$md: 900px;
+$l: 1200px;
